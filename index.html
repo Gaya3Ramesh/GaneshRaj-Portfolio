@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/8616856aa3.js" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo"><img src="./images/logo.png" alt=""></a>
+            <img src="./images/profile_img.png" alt="" class="profile_img">
+        </nav>
+    </header>
+
+    <section>
+        <div class="profileintro-container">
+            <div class="introContent">
+                <img src="./images/helloImg.png" alt="" class="helloImg">
+                <h2>i'm <span>ganesh raj</span></h2>
+                <p>a <span>product designer</span> at <img src="./images/Zoho-logo (1) 1.png" alt="" class="zohoIcon">
+                </p>
+            </div>
+            <div class="introImage">
+                <img src="./images/homeprofile.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="work-contaienr">
+            <div class="work-title">
+                <h5>My Work</h5>
+            </div>
+        </div>
+    </section>
+
+    <!-- <div class="secondNav">
+        <div class="wrapper">
+            <nav>
+                <input type="radio" name="tab" id="works" class="showall" checked />
+                <input type="radio" name="tab" id="shipped" class="Single" target="1" />
+                <input type="radio" name="tab" id="topRate" class="Single" target="2" />
+                <label for="works" class="works"><a href="#"><i class="fas fa-align-justify"></i>All works</a></label>
+                <label for="shipped" class="shipped"><a href="#"><i class="fas fa-truck"></i>Shipped</a></label>
+                <label for="topRate" class="topRate"><a href="#"><i class="fas fa-star"></i>Top rated</a></label>
+                <div class="tab"></div>
+            </nav>
+        </div>
+    </div> -->
+
+    <div class="target_box">
+        <div class="target" id="container1">
+            <div class="grid-container-works" id="AllWorks">
+                <div class="grid-item_one">
+                    <a href="./Mentions/index.html" target="_blank"><img src="./images/mentionhomeImg.png"
+                            alt=""></a>
+                    <p class="homeTitle">Mentions</p>
+                    <p class="homeSubtitle">Product design - 2023</p>
+                </div>
+                <div class="grid-item_two">
+                    <a href="./AppVideoEditor/index.html" target="_blank"><img src="./images/inapphomeImg.png"
+                            alt=""></a>
+                    <p class="homeTitle">In App Video Editor</p>
+                    <p class="homeSubtitle">Product design - 2022</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="target" id="container2">
+            <div class="grid-container-works" id="AllWorks">
+                <div class="grid-item_one">
+                    <a href="./Pinterests/index.html" target="_blank"><img src="./images/pintresthomeImg.png"
+                        alt=""></a>
+                    <p class="homeTitle">Pinterest Boards</p>
+                    <p class="homeSubtitle">Product design - 2023</p>
+                </div>
+                <div class="grid-item_two">
+                    <a href="./InstagramStories/index.html" target="_blank"><img src="./images/instagramhomeIng.png"
+                        alt=""></a>
+                    <p class="homeTitle">IG Stories</p>
+                    <p class="homeSubtitle">Product design - 2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        jQuery(function () {
+            jQuery(".showall").click(function () {
+                jQuery(".target").show();
+            });
+
+            jQuery(".Single").click(function () {
+                jQuery(".target").hide();
+                jQuery("#container" + $(this).attr("target")).show();
+            });
+        });
+    </script>
+
+</body>
+
+</html>
