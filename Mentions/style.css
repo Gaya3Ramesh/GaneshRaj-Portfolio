@@ -297,6 +297,10 @@ nav {
 .sideImage-container {
   display: flex;
 }
+.api-container .sideImage-container img {
+  width: 179.29px !important;
+  height: 146.086px !important;
+}
 
 @media (max-width: 986px) {
   .topic {
